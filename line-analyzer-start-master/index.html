@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Line Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Line Analyzer</h1>
+  <hr>
+
+  <h2>Inputs</h2>
+  <p>Provide values for the two endpoints of a line segment (x1, y1) and (x2, y2).<br>
+     Then click the ANALYZE button to get data about the provided line segment.</p>
+  <p>Point 1 x-value: <input type="number" id="pt1x"></p>
+  <p>Point 1 y-value: <input type="number" id="pt1y"></p>
+  <p>Point 2 x-value: <input type="text" id="pt2x"></p>
+  <p>Point 2 y-value: <input type="text" id="pt2y"></p>
+  <p><button id='analyze'>ANALYZE</button></p>
+  <hr>
+
+  <h2>Results</h2>
+  <p>Length of line segment: <span id="length">-----</span></p>
+  <p>Slope of line segment: <span id="slope">-----</span></p>
+  <p>Description of line segment: <span id="description">-----</span></p>
+  <p>Endpoint 1 location: <span id="location-1">-----</span></p>
+  <p>Endpoint 2 location: <span id="location-2">-----</span></p>
+  <p>Equation of line segment: <span id="equation">-----</span></p>
+
+  <!-- Load JavaScript -->
+  <script src='main.js'></script>
+</body>
+
+</html>
